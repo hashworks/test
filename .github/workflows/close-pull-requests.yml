@@ -7,5 +7,11 @@ jobs:
       - name: Close Pull
         uses: peter-evans/close-pull@v1
         with:
-          comment: ${{ .Files.Get ".github/close-pr-template.md" }}
+          comment: > 
+            # Markdown!
+            
+            Multiline!
+            No!
+            Sure!
+            Oooh!
           delete-branch: true
