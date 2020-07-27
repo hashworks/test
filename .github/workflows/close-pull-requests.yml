@@ -4,8 +4,8 @@ jobs:
   close-prs:
     runs-on: ubuntu-latest
     steps:
-    - name: Run a one-line script
-      uses: devjoes/pr-automation@v0.1.0
-      with:
-        autoCloseLabel: '*'
-        closingSoonComment: Bye!
+      - name: Close Pull
+        uses: peter-evans/close-pull@v1
+        with:
+          comment: Auto-closing pull request
+          delete-branch: true
